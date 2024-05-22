@@ -1,66 +1,19 @@
-## Foundry
+# Onlypwner Solutions
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project is structured around the [onlypwner](https://onlypwner.xyz/) challenges in the following way
 
-Foundry consists of:
+`/src`: the challenge's source code.
+`/script`: the scripts that solve each challenge.
+`/test`: tests that were done, if any.
+`/solutions`: an explanation of each challenge, the winning condition and solution.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Getting Started
 
-## Documentation
+To get started you'll need to update the `.env` file with the necessary data for each challenge.
 
-https://book.getfoundry.sh/
+## Solving Challenges
 
-## Usage
+To solve a challenge, you'll need to run the corresponding `solve_xx` command from the Makefile. For example, to solve the first challenge, you would run:
 
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+```bash
+make solve_00
