@@ -30,8 +30,3 @@ contract Solver is Script {
         return IPetition.Signature(v, r, s);
     }
 }
-
-// owner = 0xa9c1176825bbd9b9f8636e1aba915f413059fba0
-// supportDigest = 0xb2ca94d18e73d64281ebba3be050c373beac10ebb809820ae48a166564066dc2
-// rejectDigest = 0x48baead3cc42e5989b0e99e90a50f4859a78a4730b84e006c2127311be2a63d7
-// estos dos bytes son dos strings, que se convierten a hash y se les aplica la funcion toEthSignedMessageHash
